@@ -1,0 +1,150 @@
+/* Page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+}
+
+/* Main content padding */
+.main {
+    margin-left: 240px;
+    padding: 40px;
+}
+
+/* Setting cards */
+.setting-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-left: 6px solid #007bff;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.setting-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.setting-card .icon {
+    font-size: 28px;
+    background: #f0f2f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.setting-card h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #007bff;
+}
+
+.setting-card p {
+    margin: 4px 0 0;
+    color: #555;
+}
+
+.delete {
+    border-left-color: #dc3545;
+}
+
+.delete h3 {
+    color: #dc3545;
+}
+
+a.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* MODALS */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Form elements */
+.modal-content form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 600;
+}
+
+.modal-content form input[type="text"],
+.modal-content form input[type="email"],
+.modal-content form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.modal-content form button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.modal-content form button:hover {
+    background-color: #0056b3;
+}
+
+.modal-content p.success {
+    color: green;
+    margin-top: 10px;
+}
+
+.modal-content p.error {
+    color: red;
+    margin-top: 10px;
+}

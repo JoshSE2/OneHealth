@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: rgb(6, 86, 113);
+}
+
+header .logo {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo span {
+    color: aquamarine;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a { 
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: aquamarine;
+}
+
+header a { 
+    color: white;
+    text-decoration: none;
+}
+
+.account-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.account-btn:hover {
+    color: aquamarine;
+}
+
+/*This is for the home content*/
+.home-content {
+    position: relative;
+    min-height: 500px;
+    padding: 20px;
+    background: #fcfcfc;
+}
+
+.hero-section {
+    position: relative;
+    height: 450px;
+    margin-bottom: 2rem;
+}
+
+.home-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.home-bg-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute; /*To position the text on top of the image*/
+    top: 50%; 
+    right: 5%;
+    transform: translateY(-50%); /*To center the text vertically*/
+    text-align: center; 
+    background: white;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 8px; /*Box rounded corner*/
+    width: 40%;
+    height: 70%;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text ul {
+    list-style: square;
+    padding: 0;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.hero-text ul li {
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: rgb(6, 86, 113);
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgb(6, 86, 113);
+}
+
+/*The doctors section*/
+
+.doctors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.doctors-section h2 {
+    text-align: center;
+}
+
+.doctor-grid { 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /*To hide the overflow content*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-grid:hover {
+    transform: translateY(-10px); /*To move the card up on hover*/
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-img {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.doctor-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.doctor-info {
+    padding: 1rem;
+    text-align: center;
+    background: rgb(6, 86, 113);
+    color: white;
+}
+
+/* to make the design responsive*/
+@media (max-width: 1024px) { /*For devices with a maximum width of 1024px*/
+    .hero-text {
+        width: 80%;
+        right: 10%;
+    }
+
+    .doctor-img { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links ul {
+        display: none;
+    }
+
+    .hero-section {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .home-bg-img {
+        position: relative;
+        height: 300px;
+    }
+}

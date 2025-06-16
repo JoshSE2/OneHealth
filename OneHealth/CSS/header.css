@@ -1,0 +1,59 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: rgb(6, 86, 113);
+}
+
+header .logo {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo span {
+    color: aquamarine;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a { 
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: aquamarine;
+}
+
+header a { 
+    color: white;
+    text-decoration: none;
+}
+
+.account-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.account-btn:hover {
+    color: aquamarine;
+}
+
+.date-time {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
