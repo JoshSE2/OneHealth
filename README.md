@@ -2,7 +2,7 @@
 
 ## 🌐 Project Overview
 
-**OneHealth Mate** is a comprehensive online healthcare assistant platform developed to reduce unnecessary hospital visits for minor or common symptoms. The system provides **immediate access to medical advice** and allows patients to **book appointments** with doctors when needed.
+**OneHealth** is a comprehensive online healthcare assistant platform developed to reduce unnecessary hospital visits for minor or common symptoms. The system provides **immediate access to medical advice** and allows patients to **book appointments** with doctors when needed.
 
 By combining smart symptom checking tools with streamlined appointment scheduling and role-based user access, OneHealth improves both user experience and healthcare efficiency.
 
